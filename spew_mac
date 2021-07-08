@@ -1,0 +1,6 @@
+#!/bin/bash
+
+spew_mac() {
+  printf 'MAC: '
+  ifconfig -a eth0|grep ether|awk '{print $2}'
+}

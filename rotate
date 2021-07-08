@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rotate_clockwise() {
+  echo 3 |sudo tee -a /sys/class/graphics/fbcon/rotate_all
+}
+
+rotate_withershins() {
+  echo 1 |sudo tee -a /sys/class/graphics/fbcon/rotate_all
+}
+
+alias rotate_anticlockwise='rotate_withershins'
+alias rotate_anti_clockwise='rotate_withershins'
+alias rotate_anti-clockwise='rotate_withershins'
+alias rotate_counterclockwise='rotate_withershins'
+alias rotate_counter_clockwise='rotate_withershins'
+alias rotate_counter-clockwise='rotate_withershins'
